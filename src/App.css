@@ -8,6 +8,10 @@
   --bg: #171718;
 }
 
+.primary {
+  color: var(--primary);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,6 +58,92 @@
   display: none;
 }
 
+.hero-container {
+  max-width: 357px;
+  height: 464px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+}
+
+.hero-title {
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero-name:hover {
+  color: var(--hover);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 48px;
+  width: 169px;
+  border-radius: 5px;
+  outline: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.05);
+}
+
+.btn--m {
+  width: 218px;
+}
+
+.btn--l {
+  width: 286px;
+}
+
+.btn--xl {
+  width: 328px;
+}
+
+.btn--xxl {
+  width: 399px;
+}
+
+.btn--blue {
+  background-color: var(--primary);
+
+}
+
+.btn--blue:hover {
+  background-color: var(--hover);
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn--outline:active {
+  background-color: var(--border);
+  border: 2px solid var(--grey);
+}
+
+.btn > .icon {
+  background-color: transparent;
+}
+
+.hero-container > h1 {
+  font-size: 34px;
+}
 
 /* ======================== Media queries ======================== */
 @media only screen and (max-width: 767px) {
