@@ -9,7 +9,6 @@ function Navbar() {
 
   const toggleNavbar = () => {
     navRef.current.classList.toggle('responsive-nav');
-    console.log('click');
   };
 
   return (
