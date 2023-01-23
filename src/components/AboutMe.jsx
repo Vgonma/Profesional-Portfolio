@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import RightArrow from '../assets/icons/arrow-right.svg'
 import Me from '../assets/Vic_smile.jpg'
 
 function AboutMe() {
   return (
-    <div className="about-card-container">
+    <div id="About" className="about-card-container">
       <div className="about-card">
         <div className="about-card-img-container">
           <img className="about-card-me" src={Me} alt="Victor Gonzalez" />
@@ -19,7 +20,7 @@ function AboutMe() {
         I love learning new technologies and testing my skills to always keep improving.
         </p>
         <button className="btn btn--m btn--outline">
-          More about me 
+          <Link to="about">More About Me</Link> 
           <img className="icon" src={RightArrow} alt="more" />
         </button>
       </section>

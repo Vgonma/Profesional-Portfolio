@@ -6,7 +6,7 @@ import AboutMe from '../AboutMe'
 function MainPage() {
   return (
     <>
-      <article className="hero-container">
+      <article id="Hero" className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">Hello! I'm <br/>
             <NavLink to="about" className="primary hero-title hero-name"> Victor Gonzalez</NavLink>
