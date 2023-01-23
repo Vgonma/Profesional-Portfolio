@@ -196,7 +196,7 @@ a {
 .about-card-me {
   max-width: 100%;
   object-fit: cover;
-  
+  border-radius: 10px;
 }
 
 .about-card-text-container {
