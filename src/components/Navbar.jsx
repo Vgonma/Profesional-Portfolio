@@ -25,7 +25,7 @@ function Navbar() {
         <button className='nav-btn nav-close-btn' onClick={toggleNavbar}>
           <img src={cross} />
         </button>
-        <div className="copyright">© 2023 Victor Gonzalez</div>
+
       </nav>
       <button className='nav-btn' onClick={toggleNavbar}>
         <img src={hamburger} />
