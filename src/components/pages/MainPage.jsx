@@ -2,6 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Download from '../../assets/icons/download.svg'
 import AboutMe from '../AboutMe'
+import ProjectCard from '../ProjectCard'
+import projectImage from '../../assets/images/projectImage.svg';
+import arrow from '../../assets/icons/arrow-right.svg'
 
 function MainPage() {
   return (
@@ -20,6 +23,12 @@ function MainPage() {
       </article>
       <article className="about-container">
         <AboutMe />
+      </article>
+      <article className="projects-container">
+        <h2 className="projects-title">Projects</h2>
+        <ProjectCard title="Awesome Books" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
+        <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
+        <button className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></button>
       </article>
     </>
   )

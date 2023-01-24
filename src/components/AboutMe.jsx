@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import RightArrow from '../assets/icons/arrow-right.svg'
-import Me from '../assets/Vic_smile.jpg'
+import Me from '../assets/images/Vic_smile.jpg'
 
 function AboutMe() {
   return (
