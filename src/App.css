@@ -29,12 +29,18 @@ img {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
   height: 5rem;
+  background-color: var(--bg);
   border-bottom: 2px solid var(--border);
+  z-index: 100;
 }
 
 .nav-link{
@@ -311,7 +317,6 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   opacity: 1;
   background: rgb(28,30,34);
   background: linear-gradient(0deg, rgba(28,30,34,1) 0%, rgba(255,174,0,0) 100%);
@@ -341,6 +346,10 @@ img {
 
 /* ======================== Media queries ======================== */
 @media only screen and (max-width: 767px) {
+  .navbar {
+    height: 3rem;
+  }
+
   .nav-btn {
     display: block;
   }
