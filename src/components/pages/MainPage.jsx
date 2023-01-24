@@ -27,14 +27,14 @@ function MainPage() {
         <article className="about-container">
           <AboutMe />
         </article>
-        <article className="projects-container">
-          <div className="projects-title-container">
-            <h2 className="projects-title">Projects</h2>
-          </div>
-          <ProjectCard title="Awesome Books" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
-          <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
-          <Link to='projects' className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></Link>
-        </article>
+          <article className="projects-container">
+            <div className="projects-title-container">
+              <h2 className="projects-title">Projects</h2>
+            </div>
+              <ProjectCard title="Awesome Books" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
+              <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
+              <Link to='projects' className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></Link>
+          </article>
       </Fade>
     </>
   )
