@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Download from '../../assets/icons/download.svg'
 import AboutMe from '../AboutMe'
 import ProjectCard from '../ProjectCard'
@@ -28,7 +28,7 @@ function MainPage() {
         <h2 className="projects-title">Projects</h2>
         <ProjectCard title="Awesome Books" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
         <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
-        <button className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></button>
+        <Link to='projects' className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></Link>
       </article>
     </>
   )
