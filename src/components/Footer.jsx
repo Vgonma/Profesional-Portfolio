@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import LinkedIn from '../assets/logos/Linkedin.svg'
 import GitHub from '../assets/logos/github.svg'
 import Mail from '../assets/logos/email.svg'
@@ -19,9 +19,10 @@ function Footer() {
         <a href="mailto:victorgmassimi@hotmail.com">victorgmassimi@hotmail.com</a>
         </div>
         <div className="footer-subsection">
-          <Link to="/" className="footer-header" onClick={scrollTop}>Home</Link>
-          <a href="#About">About me</a>
-          <a href="#Projects">Projects</a>
+          <NavLink to="/" className="footer-header" onClick={scrollTop}>Home</NavLink>
+          <NavLink to="about" className="footer-header" onClick={scrollTop}>About Me</NavLink>
+          <NavLink to="projects" className="footer-header" onClick={scrollTop}>Projects</NavLink>
+
         </div>
 
         <div className="footer-subsection">

@@ -76,8 +76,6 @@ img {
 }
 
 .hero-container {
-  /* margin-top: 10rem;
-  margin-bottom: 20rem; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -265,7 +263,7 @@ img {
   line-height: 32px;
 }
 
-.footer-header {
+.footer-header.active {
   color: var(--highlight);
   text-decoration: none;
   font-size: 20px;
