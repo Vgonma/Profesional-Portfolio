@@ -20,7 +20,9 @@ function MainPage() {
             <p>This is my personal portfolio</p>
             <div className="hero-button-container">
             <NavLink to="projects" className="btn btn--blue">Projects</NavLink>
-            <button className="btn btn--outline"><img className="icon" src={Download} alt="download" /> Resume</button>
+            <a href="https://drive.google.com/uc?export=download&id=1nrVjNaG5Ilzo1vOYRtQ1VDgV0FerHEm3" target="_blank" >
+              <button className="btn btn--outline"><img className="icon" src={Download} alt="download" /> Resume</button>
+            </a>
             </div>
           </div>
         </article>
