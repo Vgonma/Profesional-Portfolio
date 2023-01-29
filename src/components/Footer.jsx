@@ -26,7 +26,9 @@ function Footer() {
         </div>
 
         <div className="footer-subsection">
-          <Link to="contact" className="footer-header" onClick={scrollTop}>Contact</Link>
+          <div>
+            <NavLink to="contact" className="footer-header" onClick={scrollTop}>Contact</NavLink>
+          </div>
           <div className="social-icons-container">
             <a href="https://www.linkedin.com/in/victor-gonzalez-massimi/" target="_blank"><img src={LinkedIn} alt="LinkedIn" /></a>
             <a href="https://github.com/Vgonma" target="_blank"><img src={GitHub} alt="GitHub" /></a>

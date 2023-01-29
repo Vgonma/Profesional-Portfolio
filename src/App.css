@@ -182,7 +182,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 8rem; */
   margin: 4rem;
 }
 
@@ -299,6 +298,8 @@ img {
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .projects-container > * {
@@ -363,6 +364,31 @@ img {
   padding: 3px 5px;
   background-color: #ffffff1a;
   font-size: 14px;
+}
+
+
+.about-page-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  row-gap: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--fillilng);
+  padding: 1rem;
+  max-width: 1000px;
+  align-items: flex-end;
+  justify-items: center;
+}
+
+.about-page-card-text-container {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-skills-container {
@@ -448,6 +474,7 @@ img {
   border: 1px solid var(--grey);
   border-radius: 5px;
   padding: 1rem 20px;
+  width: 100%;
   max-width: 400px;
 }
 
@@ -573,6 +600,10 @@ img {
     align-items: center;
   }
 
+  .about-page-card {
+    grid-template-columns: 1fr;
+  }
+
   .about-card-img-container {
     margin: auto;
   }
@@ -590,7 +621,7 @@ img {
   .footer {
     display: grid;
     grid-auto-flow: row;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .footer-subsection {
@@ -619,22 +650,21 @@ img {
     margin: 1rem 0;
     gap: 2rem;
   }
-  
-  
+
   .success-message {
     height: 90vh;
   }
 
   /* Modifiers */
-.title--big {
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 40px;
-}
+  .title--big {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+  }
 
-.title--med {
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 28px;
-}
+  .title--med {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 28px;
+  }
 }

@@ -7,6 +7,7 @@ import AboutMe from '../AboutMe'
 import ProjectCard from '../ProjectCard'
 import projectImage from '../../assets/images/projectImage.svg';
 import arrow from '../../assets/icons/arrow-right.svg'
+import ContactPage from './ContactPage'
 
 function MainPage() {
   return (
@@ -37,6 +38,7 @@ function MainPage() {
               <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
               <Link to='projects' className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></Link>
           </article>
+          <ContactPage />
       </Fade>
     </>
   )
