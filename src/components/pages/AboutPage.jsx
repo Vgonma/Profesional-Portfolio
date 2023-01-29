@@ -33,7 +33,7 @@ function AboutPage() {
 
           </p>
           <button className="btn btn--m btn--blue">
-            <Link to="contact">Contact me</Link> 
+            <Link to="/contact">Contact me</Link> 
             <img className="icon" src={RightArrow} alt="more" />
           </button>
         </section>
