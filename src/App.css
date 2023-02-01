@@ -394,6 +394,11 @@ img {
   gap: 1rem;
 }
 
+.show-hide{
+  color: var(--primary);
+  cursor: pointer;
+}
+
 .aboutme-btn {
   grid-column: 2;
 }

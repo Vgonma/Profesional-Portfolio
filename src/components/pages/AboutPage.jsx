@@ -12,25 +12,21 @@ import template from '../../assets/icons/template.svg'
 import phone from '../../assets/icons/device-mobile.svg'
 import world from '../../assets/icons/worldwide.png'
 
-const fullText = `I am a full stack developer who can make any project look simple through my experience as a coding teacher. I believe software development is no longer the future, it has become the present. It is involved in everything we see and interact with and it is very important to be able to exploit it and develop the best software possible through best practices and thorough testing.
-<br><br>
-In order to achieve that I studied at  Microverse, a remote software development program that uses pair programming and project building to teach development. At Microverse, I learned to communicate with many people from different cultures and time zones, as well as organize and adapt to work as a team. I also learned the importance of writing clean code and how to ensure that the code is written the best way possible.\nWhenever I am not programming I like to spend my time studying game development and game engines since I want to one day publish my own. In other cases, you can find me playing a challenging video game. I am particularly fond of the Souls series and I play through them whenever I can.\nIf you are interested in working together don’t hesitate to contact me. I am always open.`;
 
-const shortText = `I am a full stack developer who can make any project look simple through my experience as a coding teacher. I believe software development is no longer the future, it has become the present. It is involved in everything we see and interact with and it is very important to be able to exploit it and develop the best software possible through best practices and thorough testing.
-`
 
+const shortText = <p>I am a full stack developer who can make any project look simple through my experience as a coding teacher. I believe software development is no longer the future, it has become the present. It is involved in everything we see and interact with and it is very important to be able to exploit it and develop the best software possible through best practices and thorough testing.</p>
+
+const fullText = <p>I am a full stack developer who can make any project look simple through my experience as a coding teacher. I believe software development is no longer the future, it has become the present. It is involved in everything we see and interact with and it is very important to be able to exploit it and develop the best software possible through best practices and thorough testing.
+<br/><br/>
+In order to achieve that I studied at  Microverse, a remote software development program that uses pair programming and project building to teach development. At Microverse, I learned to communicate with many people from different cultures and time zones, as well as organize and adapt to work as a team. I also learned the importance of writing clean code and how to ensure that the code is written the best way possible.<br/><br/>Whenever I am not programming I like to spend my time studying game development and game engines since I want to one day publish my own. In other cases, you can find me playing a challenging video game. I am particularly fond of the Souls series and I play through them whenever I can.\nIf you are interested in working together don’t hesitate to contact me. I am always open.</p>
 
 function AboutPage() {
-  const [text, setText] = useState(fullText);
-  const [showMore, setShowMore] = useState(false);
+  const [text, setText] = useState(shortText);
+  const [showMore, setShowMore] = useState(true);
   // const textArea = document.getElementById('textArea');
-  
-  
-  useEffect(() => {
-    document.getElementById('textArea').innerHTML = text;
-  },[text])
 
   function changeTextLength() {
+    setShowMore(!showMore);
     
   }
 
@@ -43,9 +39,15 @@ function AboutPage() {
           </div>
           <div className="aboutme-text-container">
             <h1 className="aboutme-title title--big">Victor Gonzalez</h1>
-            <p id="textArea" className="about-card-p">
-              {text} <br/> <span onClick={changeTextLength}>more...</span>
-            </p>
+            <div id="textArea" className="about-card-p">
+              {
+                showMore ? 
+                  <> {shortText} <br/> <span className="show-hide" onClick={changeTextLength}>Show more...</span></>
+                :
+                  <> {fullText} <br/> <span className="show-hide" onClick={changeTextLength}>...see less</span></>
+                  
+              } 
+            </div>
           </div>
           <button className="aboutme-btn btn btn--m btn--blue">
                 <Link to="/contact">Contact me</Link> 
