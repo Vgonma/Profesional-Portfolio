@@ -323,6 +323,8 @@ img {
   max-height: 534px;
   position: relative;
   margin: 1.5rem 0;
+  overflow: hidden;
+  margin-inline: auto;
 }
 
 .project-info {
@@ -331,7 +333,6 @@ img {
   justify-content: flex-end;
   gap: 0.5rem;
   padding: 1rem;
-  border-radius: 5px;
   width: 100%;
   height: 100%;
   position: absolute;

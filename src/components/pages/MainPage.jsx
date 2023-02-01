@@ -5,7 +5,8 @@ import { Link, NavLink } from 'react-router-dom'
 import Download from '../../assets/icons/download.svg'
 import AboutMe from '../AboutMe'
 import ProjectCard from '../ProjectCard'
-import projectImage from '../../assets/images/projectImage.svg';
+import project1 from '../../assets/images/bookstore-thumbnail.png';
+import project2 from '../../assets/images/math-magician-thumbnail.png';
 import arrow from '../../assets/icons/arrow-right.svg'
 import ContactPage from './ContactPage'
 
@@ -34,8 +35,8 @@ function MainPage() {
             <div className="projects-title-container">
               <h2 className="projects-title">Projects</h2>
             </div>
-              <ProjectCard title="Awesome Books" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
-              <ProjectCard title="Project 2" image={projectImage} tech={['React', 'HTML&CSS', 'JavaScript']}/>
+              <ProjectCard link="https://bookstore-0ob6.onrender.com/" title="Awesome Books" image={project1} tech={['React', 'HTML&CSS', 'JavaScript', 'Redux']}/>
+              <ProjectCard link="https://math-magician-pi3w.onrender.com/" title="Math Magician" image={project2} tech={['React', 'HTML&CSS', 'JavaScript']}/>
               <Link to='projects' className="btn btn--blue btn--l">More Projects <img src={arrow} alt="arrow" /></Link>
           </article>
           <ContactPage />
